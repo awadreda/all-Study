@@ -1,0 +1,10 @@
+E:\coursesVS\course14vscom\FirstApp\calculator project\Guess The Word\bin\Debug\Guess The Word.exe.config
+E:\coursesVS\course14vscom\FirstApp\calculator project\Guess The Word\bin\Debug\Guess The Word.exe
+E:\coursesVS\course14vscom\FirstApp\calculator project\Guess The Word\bin\Debug\Guess The Word.pdb
+E:\coursesVS\course14vscom\FirstApp\calculator project\Guess The Word\obj\Debug\Guess The Word.csproj.AssemblyReference.cache
+E:\coursesVS\course14vscom\FirstApp\calculator project\Guess The Word\obj\Debug\Guess_The_Word.Form1.resources
+E:\coursesVS\course14vscom\FirstApp\calculator project\Guess The Word\obj\Debug\Guess_The_Word.Properties.Resources.resources
+E:\coursesVS\course14vscom\FirstApp\calculator project\Guess The Word\obj\Debug\Guess The Word.csproj.GenerateResource.cache
+E:\coursesVS\course14vscom\FirstApp\calculator project\Guess The Word\obj\Debug\Guess The Word.csproj.CoreCompileInputs.cache
+E:\coursesVS\course14vscom\FirstApp\calculator project\Guess The Word\obj\Debug\Guess The Word.exe
+E:\coursesVS\course14vscom\FirstApp\calculator project\Guess The Word\obj\Debug\Guess The Word.pdb

@@ -1,0 +1,6 @@
+C:\Tutourials\Essam.NET\C#\Test\MyfristClassLibrary1\bin\Debug\MyfristClassLibrary1.dll
+C:\Tutourials\Essam.NET\C#\Test\MyfristClassLibrary1\bin\Debug\MyfristClassLibrary1.pdb
+C:\Tutourials\Essam.NET\C#\Test\MyfristClassLibrary1\obj\Debug\clsMyMath.csprojAssemblyReference.cache
+C:\Tutourials\Essam.NET\C#\Test\MyfristClassLibrary1\obj\Debug\clsMyMath.csproj.CoreCompileInputs.cache
+C:\Tutourials\Essam.NET\C#\Test\MyfristClassLibrary1\obj\Debug\MyfristClassLibrary1.dll
+C:\Tutourials\Essam.NET\C#\Test\MyfristClassLibrary1\obj\Debug\MyfristClassLibrary1.pdb

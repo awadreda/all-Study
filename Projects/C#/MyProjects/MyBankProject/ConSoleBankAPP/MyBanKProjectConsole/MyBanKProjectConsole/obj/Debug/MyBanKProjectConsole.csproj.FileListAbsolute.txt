@@ -1,0 +1,12 @@
+C:\Tutourials\Projects\C#\MyProjects\MyBankProject\ConSoleBankAPP\MyBanKProjectConsole\MyBanKProjectConsole\obj\Debug\MyBanKProjectConsole.csprojAssemblyReference.cache
+C:\Tutourials\Projects\C#\MyProjects\MyBankProject\ConSoleBankAPP\MyBanKProjectConsole\MyBanKProjectConsole\obj\Debug\MyBanKProjectConsole.csproj.CoreCompileInputs.cache
+C:\Tutourials\Projects\C#\MyProjects\MyBankProject\ConSoleBankAPP\MyBanKProjectConsole\MyBanKProjectConsole\bin\Debug\MyBanKProjectConsole.exe.config
+C:\Tutourials\Projects\C#\MyProjects\MyBankProject\ConSoleBankAPP\MyBanKProjectConsole\MyBanKProjectConsole\bin\Debug\MyBanKProjectConsole.exe
+C:\Tutourials\Projects\C#\MyProjects\MyBankProject\ConSoleBankAPP\MyBanKProjectConsole\MyBanKProjectConsole\bin\Debug\MyBanKProjectConsole.pdb
+C:\Tutourials\Projects\C#\MyProjects\MyBankProject\ConSoleBankAPP\MyBanKProjectConsole\MyBanKProjectConsole\bin\Debug\BankbusinessLayer.dll
+C:\Tutourials\Projects\C#\MyProjects\MyBankProject\ConSoleBankAPP\MyBanKProjectConsole\MyBanKProjectConsole\bin\Debug\BankDataAccessLayer.dll
+C:\Tutourials\Projects\C#\MyProjects\MyBankProject\ConSoleBankAPP\MyBanKProjectConsole\MyBanKProjectConsole\bin\Debug\BankbusinessLayer.pdb
+C:\Tutourials\Projects\C#\MyProjects\MyBankProject\ConSoleBankAPP\MyBanKProjectConsole\MyBanKProjectConsole\bin\Debug\BankDataAccessLayer.pdb
+C:\Tutourials\Projects\C#\MyProjects\MyBankProject\ConSoleBankAPP\MyBanKProjectConsole\MyBanKProjectConsole\obj\Debug\MyBanKProjectConsole.csproj.CopyComplete
+C:\Tutourials\Projects\C#\MyProjects\MyBankProject\ConSoleBankAPP\MyBanKProjectConsole\MyBanKProjectConsole\obj\Debug\MyBanKProjectConsole.exe
+C:\Tutourials\Projects\C#\MyProjects\MyBankProject\ConSoleBankAPP\MyBanKProjectConsole\MyBanKProjectConsole\obj\Debug\MyBanKProjectConsole.pdb

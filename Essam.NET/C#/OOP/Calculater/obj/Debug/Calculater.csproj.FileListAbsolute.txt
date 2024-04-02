@@ -1,0 +1,7 @@
+C:\Tutourials\Essam.NET\C#\OOP\Calculater\bin\Debug\Calculater.exe.config
+C:\Tutourials\Essam.NET\C#\OOP\Calculater\bin\Debug\Calculater.exe
+C:\Tutourials\Essam.NET\C#\OOP\Calculater\bin\Debug\Calculater.pdb
+C:\Tutourials\Essam.NET\C#\OOP\Calculater\obj\Debug\Calculater.csprojAssemblyReference.cache
+C:\Tutourials\Essam.NET\C#\OOP\Calculater\obj\Debug\Calculater.csproj.CoreCompileInputs.cache
+C:\Tutourials\Essam.NET\C#\OOP\Calculater\obj\Debug\Calculater.exe
+C:\Tutourials\Essam.NET\C#\OOP\Calculater\obj\Debug\Calculater.pdb

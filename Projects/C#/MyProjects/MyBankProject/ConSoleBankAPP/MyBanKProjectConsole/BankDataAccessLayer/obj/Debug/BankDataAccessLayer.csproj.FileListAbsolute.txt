@@ -1,0 +1,6 @@
+C:\Tutourials\Projects\C#\MyProjects\MyBankProject\ConSoleBankAPP\MyBanKProjectConsole\BankDataAccessLayer\obj\Debug\BankDataAccessLayer.csprojAssemblyReference.cache
+C:\Tutourials\Projects\C#\MyProjects\MyBankProject\ConSoleBankAPP\MyBanKProjectConsole\BankDataAccessLayer\obj\Debug\BankDataAccessLayer.csproj.CoreCompileInputs.cache
+C:\Tutourials\Projects\C#\MyProjects\MyBankProject\ConSoleBankAPP\MyBanKProjectConsole\BankDataAccessLayer\bin\Debug\BankDataAccessLayer.dll
+C:\Tutourials\Projects\C#\MyProjects\MyBankProject\ConSoleBankAPP\MyBanKProjectConsole\BankDataAccessLayer\bin\Debug\BankDataAccessLayer.pdb
+C:\Tutourials\Projects\C#\MyProjects\MyBankProject\ConSoleBankAPP\MyBanKProjectConsole\BankDataAccessLayer\obj\Debug\BankDataAccessLayer.dll
+C:\Tutourials\Projects\C#\MyProjects\MyBankProject\ConSoleBankAPP\MyBanKProjectConsole\BankDataAccessLayer\obj\Debug\BankDataAccessLayer.pdb

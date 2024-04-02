@@ -1,0 +1,7 @@
+C:\Tutourials\Essam.NET\C#\ABC\HR\bin\Debug\HR.exe.config
+C:\Tutourials\Essam.NET\C#\ABC\HR\bin\Debug\HR.exe
+C:\Tutourials\Essam.NET\C#\ABC\HR\bin\Debug\HR.pdb
+C:\Tutourials\Essam.NET\C#\ABC\HR\obj\Debug\HR.csprojAssemblyReference.cache
+C:\Tutourials\Essam.NET\C#\ABC\HR\obj\Debug\HR.csproj.CoreCompileInputs.cache
+C:\Tutourials\Essam.NET\C#\ABC\HR\obj\Debug\HR.exe
+C:\Tutourials\Essam.NET\C#\ABC\HR\obj\Debug\HR.pdb

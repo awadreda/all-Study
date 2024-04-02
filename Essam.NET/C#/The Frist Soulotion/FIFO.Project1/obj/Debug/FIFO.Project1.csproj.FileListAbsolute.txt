@@ -1,0 +1,10 @@
+C:\Tutourials\Essam.NET\C#\The Frist Soulotion\FIFO.Project1\obj\Debug\FIFO.Project1.csprojAssemblyReference.cache
+C:\Tutourials\Essam.NET\C#\The Frist Soulotion\FIFO.Project1\obj\Debug\FIFO.Project1.csproj.CoreCompileInputs.cache
+C:\Tutourials\Essam.NET\C#\The Frist Soulotion\FIFO.Project1\bin\Debug\FIFO.Project1.exe.config
+C:\Tutourials\Essam.NET\C#\The Frist Soulotion\FIFO.Project1\bin\Debug\FIFO.Project1.exe
+C:\Tutourials\Essam.NET\C#\The Frist Soulotion\FIFO.Project1\bin\Debug\FIFO.Project1.pdb
+C:\Tutourials\Essam.NET\C#\The Frist Soulotion\FIFO.Project1\bin\Debug\fifo.HR.dll
+C:\Tutourials\Essam.NET\C#\The Frist Soulotion\FIFO.Project1\bin\Debug\fifo.HR.pdb
+C:\Tutourials\Essam.NET\C#\The Frist Soulotion\FIFO.Project1\obj\Debug\FIFO.Project1.csproj.CopyComplete
+C:\Tutourials\Essam.NET\C#\The Frist Soulotion\FIFO.Project1\obj\Debug\FIFO.Project1.exe
+C:\Tutourials\Essam.NET\C#\The Frist Soulotion\FIFO.Project1\obj\Debug\FIFO.Project1.pdb

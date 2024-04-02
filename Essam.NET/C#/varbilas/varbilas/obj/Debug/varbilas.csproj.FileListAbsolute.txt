@@ -1,0 +1,7 @@
+C:\Tutourials\Essam.NET\C#\varbilas\varbilas\bin\Debug\varbilas.exe.config
+C:\Tutourials\Essam.NET\C#\varbilas\varbilas\bin\Debug\varbilas.exe
+C:\Tutourials\Essam.NET\C#\varbilas\varbilas\bin\Debug\varbilas.pdb
+C:\Tutourials\Essam.NET\C#\varbilas\varbilas\obj\Debug\varbilas.csprojAssemblyReference.cache
+C:\Tutourials\Essam.NET\C#\varbilas\varbilas\obj\Debug\varbilas.csproj.CoreCompileInputs.cache
+C:\Tutourials\Essam.NET\C#\varbilas\varbilas\obj\Debug\varbilas.exe
+C:\Tutourials\Essam.NET\C#\varbilas\varbilas\obj\Debug\varbilas.pdb

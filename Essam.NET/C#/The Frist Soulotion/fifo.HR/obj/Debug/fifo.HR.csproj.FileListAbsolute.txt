@@ -1,0 +1,6 @@
+C:\Tutourials\Essam.NET\C#\The Frist Soulotion\fifo.HR\bin\Debug\fifo.HR.dll
+C:\Tutourials\Essam.NET\C#\The Frist Soulotion\fifo.HR\bin\Debug\fifo.HR.pdb
+C:\Tutourials\Essam.NET\C#\The Frist Soulotion\fifo.HR\obj\Debug\fifo.HR.csprojAssemblyReference.cache
+C:\Tutourials\Essam.NET\C#\The Frist Soulotion\fifo.HR\obj\Debug\fifo.HR.csproj.CoreCompileInputs.cache
+C:\Tutourials\Essam.NET\C#\The Frist Soulotion\fifo.HR\obj\Debug\fifo.HR.dll
+C:\Tutourials\Essam.NET\C#\The Frist Soulotion\fifo.HR\obj\Debug\fifo.HR.pdb

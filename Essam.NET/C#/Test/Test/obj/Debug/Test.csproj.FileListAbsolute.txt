@@ -1,0 +1,10 @@
+C:\Tutourials\Essam.NET\C#\Test\Test\bin\Debug\Test.exe.config
+C:\Tutourials\Essam.NET\C#\Test\Test\bin\Debug\Test.exe
+C:\Tutourials\Essam.NET\C#\Test\Test\bin\Debug\Test.pdb
+C:\Tutourials\Essam.NET\C#\Test\Test\bin\Debug\MyfristClassLibrary1.dll
+C:\Tutourials\Essam.NET\C#\Test\Test\bin\Debug\MyfristClassLibrary1.pdb
+C:\Tutourials\Essam.NET\C#\Test\Test\obj\Debug\Test.csprojAssemblyReference.cache
+C:\Tutourials\Essam.NET\C#\Test\Test\obj\Debug\Test.csproj.CoreCompileInputs.cache
+C:\Tutourials\Essam.NET\C#\Test\Test\obj\Debug\Test.csproj.CopyComplete
+C:\Tutourials\Essam.NET\C#\Test\Test\obj\Debug\Test.exe
+C:\Tutourials\Essam.NET\C#\Test\Test\obj\Debug\Test.pdb

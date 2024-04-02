@@ -1,0 +1,89 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Raod map !!\\k \u0627\u0644\u0643\u0648\u0631\u0633 \u0627\u0644\u0631\u0627\u0628\u0639 \u0639\u0634\u0631\\Project !!\\Zekr\\Zekr\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{41645CE6-EF16-44C6-B213-ABA9475F0B86}|Zekr.csproj|d:\\raod map !!\\k \u0627\u0644\u0643\u0648\u0631\u0633 \u0627\u0644\u0631\u0627\u0628\u0639 \u0639\u0634\u0631\\project !!\\zekr\\zekr\\testform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{41645CE6-EF16-44C6-B213-ABA9475F0B86}|Zekr.csproj|solutionrelative:testform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{41645CE6-EF16-44C6-B213-ABA9475F0B86}|Zekr.csproj|d:\\raod map !!\\k \u0627\u0644\u0643\u0648\u0631\u0633 \u0627\u0644\u0631\u0627\u0628\u0639 \u0639\u0634\u0631\\project !!\\zekr\\zekr\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{41645CE6-EF16-44C6-B213-ABA9475F0B86}|Zekr.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{41645CE6-EF16-44C6-B213-ABA9475F0B86}|Zekr.csproj|d:\\raod map !!\\k \u0627\u0644\u0643\u0648\u0631\u0633 \u0627\u0644\u0631\u0627\u0628\u0639 \u0639\u0634\u0631\\project !!\\zekr\\zekr\\azkarmasaa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{41645CE6-EF16-44C6-B213-ABA9475F0B86}|Zekr.csproj|solutionrelative:azkarmasaa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{41645CE6-EF16-44C6-B213-ABA9475F0B86}|Zekr.csproj|d:\\raod map !!\\k \u0627\u0644\u0643\u0648\u0631\u0633 \u0627\u0644\u0631\u0627\u0628\u0639 \u0639\u0634\u0631\\project !!\\zekr\\zekr\\azkarsabah.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{41645CE6-EF16-44C6-B213-ABA9475F0B86}|Zekr.csproj|solutionrelative:azkarsabah.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "D:\\Raod map !!\\k \u0627\u0644\u0643\u0648\u0631\u0633 \u0627\u0644\u0631\u0627\u0628\u0639 \u0639\u0634\u0631\\Project !!\\Zekr\\Zekr\\Form1.cs",
+              "RelativeDocumentMoniker": "Form1.cs",
+              "ToolTip": "D:\\Raod map !!\\k \u0627\u0644\u0643\u0648\u0631\u0633 \u0627\u0644\u0631\u0627\u0628\u0639 \u0639\u0634\u0631\\Project !!\\Zekr\\Zekr\\Form1.cs [Design]",
+              "RelativeToolTip": "Form1.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-22T14:58:56.715Z",
+              "IsPinned": true,
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "TestForm.cs [Design]",
+              "DocumentMoniker": "D:\\Raod map !!\\k \u0627\u0644\u0643\u0648\u0631\u0633 \u0627\u0644\u0631\u0627\u0628\u0639 \u0639\u0634\u0631\\Project !!\\Zekr\\Zekr\\TestForm.cs",
+              "RelativeDocumentMoniker": "TestForm.cs",
+              "ToolTip": "D:\\Raod map !!\\k \u0627\u0644\u0643\u0648\u0631\u0633 \u0627\u0644\u0631\u0627\u0628\u0639 \u0639\u0634\u0631\\Project !!\\Zekr\\Zekr\\TestForm.cs [Design]",
+              "RelativeToolTip": "TestForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-25T20:11:53.079Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AzkarSabah.cs [Design]",
+              "DocumentMoniker": "D:\\Raod map !!\\k \u0627\u0644\u0643\u0648\u0631\u0633 \u0627\u0644\u0631\u0627\u0628\u0639 \u0639\u0634\u0631\\Project !!\\Zekr\\Zekr\\AzkarSabah.cs",
+              "RelativeDocumentMoniker": "AzkarSabah.cs",
+              "ToolTip": "D:\\Raod map !!\\k \u0627\u0644\u0643\u0648\u0631\u0633 \u0627\u0644\u0631\u0627\u0628\u0639 \u0639\u0634\u0631\\Project !!\\Zekr\\Zekr\\AzkarSabah.cs [Design]",
+              "RelativeToolTip": "AzkarSabah.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-25T19:41:41.732Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AzkarMasaa.cs [Design]",
+              "DocumentMoniker": "D:\\Raod map !!\\k \u0627\u0644\u0643\u0648\u0631\u0633 \u0627\u0644\u0631\u0627\u0628\u0639 \u0639\u0634\u0631\\Project !!\\Zekr\\Zekr\\AzkarMasaa.cs",
+              "RelativeDocumentMoniker": "AzkarMasaa.cs",
+              "ToolTip": "D:\\Raod map !!\\k \u0627\u0644\u0643\u0648\u0631\u0633 \u0627\u0644\u0631\u0627\u0628\u0639 \u0639\u0634\u0631\\Project !!\\Zekr\\Zekr\\AzkarMasaa.cs [Design]",
+              "RelativeToolTip": "AzkarMasaa.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-25T19:41:41.093Z",
+              "EditorCaption": " [Design]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+div {
+  background-color: #f9f9f9;
+  text-transform: capitalize;
+  line-height: 1.6;
+  /* white-space: nr; */
+  white-space: nowrap;
+  width: 200px;
+ /* word-wrap: normal;  */
+}

@@ -1,0 +1,7 @@
+C:\Tutourials\Essam.NET\C#\The Frist Soulotion\FiFo.ConsoleApp2\bin\Debug\FiFo.ConsoleApp2.exe.config
+C:\Tutourials\Essam.NET\C#\The Frist Soulotion\FiFo.ConsoleApp2\bin\Debug\FiFo.ConsoleApp2.exe
+C:\Tutourials\Essam.NET\C#\The Frist Soulotion\FiFo.ConsoleApp2\bin\Debug\FiFo.ConsoleApp2.pdb
+C:\Tutourials\Essam.NET\C#\The Frist Soulotion\FiFo.ConsoleApp2\obj\Debug\FiFo.ConsoleApp2.csproj.CoreCompileInputs.cache
+C:\Tutourials\Essam.NET\C#\The Frist Soulotion\FiFo.ConsoleApp2\obj\Debug\FiFo.ConsoleApp2.exe
+C:\Tutourials\Essam.NET\C#\The Frist Soulotion\FiFo.ConsoleApp2\obj\Debug\FiFo.ConsoleApp2.pdb
+C:\Tutourials\Essam.NET\C#\The Frist Soulotion\FiFo.ConsoleApp2\obj\Debug\FiFo.ConsoleApp2.csprojAssemblyReference.cache

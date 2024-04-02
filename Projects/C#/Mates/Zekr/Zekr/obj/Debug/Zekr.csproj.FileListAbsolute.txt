@@ -1,0 +1,27 @@
+D:\Raod map !!\k الكورس الرابع عشر\Project !!\Zekr\Zekr\bin\Debug\Zekr.exe.config
+D:\Raod map !!\k الكورس الرابع عشر\Project !!\Zekr\Zekr\bin\Debug\Zekr.exe
+D:\Raod map !!\k الكورس الرابع عشر\Project !!\Zekr\Zekr\bin\Debug\Zekr.pdb
+D:\Raod map !!\k الكورس الرابع عشر\Project !!\Zekr\Zekr\bin\Debug\Guna.UI2.dll
+D:\Raod map !!\k الكورس الرابع عشر\Project !!\Zekr\Zekr\obj\Debug\Zekr.csproj.AssemblyReference.cache
+D:\Raod map !!\k الكورس الرابع عشر\Project !!\Zekr\Zekr\obj\Debug\Zekr.Properties.Resources.resources
+D:\Raod map !!\k الكورس الرابع عشر\Project !!\Zekr\Zekr\obj\Debug\Zekr.csproj.GenerateResource.cache
+D:\Raod map !!\k الكورس الرابع عشر\Project !!\Zekr\Zekr\obj\Debug\Zekr.csproj.CoreCompileInputs.cache
+D:\Raod map !!\k الكورس الرابع عشر\Project !!\Zekr\Zekr\obj\Debug\Zekr.csproj.Up2Date
+D:\Raod map !!\k الكورس الرابع عشر\Project !!\Zekr\Zekr\obj\Debug\Zekr.exe
+D:\Raod map !!\k الكورس الرابع عشر\Project !!\Zekr\Zekr\obj\Debug\Zekr.pdb
+D:\Raod map !!\k الكورس الرابع عشر\Project !!\Zekr\Zekr\obj\Debug\Zekr.MainForm.resources
+D:\Raod map !!\k الكورس الرابع عشر\Project !!\Zekr\Zekr\obj\Debug\Zekr.Form2.resources
+D:\Raod map !!\k الكورس الرابع عشر\Project !!\Zekr\Zekr\obj\Debug\Zekr.AzkarSabah.resources
+D:\Raod map !!\k الكورس الرابع عشر\Project !!\Zekr\Zekr\obj\Debug\Zekr.ContactForm.resources
+D:\Raod map !!\k الكورس الرابع عشر\Project !!\Zekr\Zekr\obj\Debug\Zekr.AzkarMasaa.resources
+C:\Tutourials\Projects\C#\Mates\Zekr\Zekr\obj\Debug\Zekr.csprojAssemblyReference.cache
+C:\Tutourials\Projects\C#\Mates\Zekr\Zekr\obj\Debug\Zekr.AzkarMasaa.resources
+C:\Tutourials\Projects\C#\Mates\Zekr\Zekr\obj\Debug\Zekr.AzkarSabah.resources
+C:\Tutourials\Projects\C#\Mates\Zekr\Zekr\obj\Debug\Zekr.ContactForm.resources
+C:\Tutourials\Projects\C#\Mates\Zekr\Zekr\obj\Debug\Zekr.MainForm.resources
+C:\Tutourials\Projects\C#\Mates\Zekr\Zekr\obj\Debug\Zekr.Form2.resources
+C:\Tutourials\Projects\C#\Mates\Zekr\Zekr\obj\Debug\Zekr.Properties.Resources.resources
+C:\Tutourials\Projects\C#\Mates\Zekr\Zekr\obj\Debug\Zekr.csproj.GenerateResource.cache
+C:\Tutourials\Projects\C#\Mates\Zekr\Zekr\obj\Debug\Zekr.csproj.CoreCompileInputs.cache
+C:\Tutourials\Projects\C#\Mates\Zekr\Zekr\obj\Debug\Zekr.exe
+C:\Tutourials\Projects\C#\Mates\Zekr\Zekr\obj\Debug\Zekr.pdb
