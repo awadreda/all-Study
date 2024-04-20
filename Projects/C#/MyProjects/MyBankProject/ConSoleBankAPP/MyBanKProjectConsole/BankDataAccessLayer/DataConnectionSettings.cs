@@ -9,7 +9,16 @@ namespace BankDataAccessLayer
     public static class DataConnectionSettings
     {
 
-        public static string ConnectionString = "Server=.;Database= MyBankDB ;User Id=sa;Password=sa123456;";
+        private static string _ConnectionString = "Server=.;Database= MyBankDB ;User Id=sa;Password=sa123456;";
+
+        public static string ConnectionString
+        {
+            get
+                {
+
+                return _ConnectionString;
+            }
+        }
 
 
 

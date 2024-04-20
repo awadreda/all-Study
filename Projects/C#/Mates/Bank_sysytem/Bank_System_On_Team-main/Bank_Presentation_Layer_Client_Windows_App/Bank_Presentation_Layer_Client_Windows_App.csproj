@@ -1,0 +1,335 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2B9599C1-1A82-4731-90B6-489F2CB6A5A1}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Bank_Presentation_Layer_Windows_App</RootNamespace>
+    <AssemblyName>Bank_Presentation_Layer_Windows_App</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Castle.Core, Version=5.0.0.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc, processorArchitecture=MSIL">
+      <HintPath>..\packages\Castle.Core.5.1.1\lib\net462\Castle.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Zeroit.Framework.LineSeparators, Version=1.0.0.0, Culture=neutral, PublicKeyToken=a0cee1bfa120b953, processorArchitecture=MSIL">
+      <HintPath>..\packages\Zeroit.Framework.LineSeparators.1.0.0\lib\Zeroit.Framework.LineSeparators.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ClientScreen\ClientHistorique\frm_TransactionDetailles.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClientScreen\ClientHistorique\frm_TransactionDetailles.Designer.cs">
+      <DependentUpon>frm_TransactionDetailles.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClientScreen\ClientHome\Deposit\frm_DepositFirstScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClientScreen\ClientHome\Deposit\frm_DepositFirstScreen.Designer.cs">
+      <DependentUpon>frm_DepositFirstScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClientScreen\ClientHome\Deposit\frm_DepositMainScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClientScreen\ClientHome\Deposit\frm_DepositMainScreen.Designer.cs">
+      <DependentUpon>frm_DepositMainScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClientScreen\ClientHome\Deposit\frm_DepositSecond.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClientScreen\ClientHome\Deposit\frm_DepositSecond.Designer.cs">
+      <DependentUpon>frm_DepositSecond.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClientScreen\ClientHome\Transfer\frm_TransferFirstScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClientScreen\ClientHome\Transfer\frm_TransferFirstScreen.Designer.cs">
+      <DependentUpon>frm_TransferFirstScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClientScreen\ClientHome\Transfer\frm_TransferMainScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClientScreen\ClientHome\Transfer\frm_TransferMainScreen.Designer.cs">
+      <DependentUpon>frm_TransferMainScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClientScreen\ClientHome\Transfer\frm_TransferSecondScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClientScreen\ClientHome\Transfer\frm_TransferSecondScreen.Designer.cs">
+      <DependentUpon>frm_TransferSecondScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClientScreen\ClientHome\Transfer\frm_TransferThirdScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClientScreen\ClientHome\Transfer\frm_TransferThirdScreen.Designer.cs">
+      <DependentUpon>frm_TransferThirdScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClientScreen\ClientHome\ucClientBalanceSummary.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ClientScreen\ClientHome\ucClientBalanceSummary.Designer.cs">
+      <DependentUpon>ucClientBalanceSummary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClientScreen\ClientHistorique\frm_ClientHistorique.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClientScreen\ClientHistorique\frm_ClientHistorique.Designer.cs">
+      <DependentUpon>frm_ClientHistorique.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClientScreen\ClientHome\frm_ClientHome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClientScreen\ClientHome\frm_ClientHome.Designer.cs">
+      <DependentUpon>frm_ClientHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClientScreen\ClientHome\Withdraw\frm_WithdrawFirstScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClientScreen\ClientHome\Withdraw\frm_WithdrawFirstScreen.Designer.cs">
+      <DependentUpon>frm_WithdrawFirstScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClientScreen\ClientHome\Withdraw\frm_WithdrawMainScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClientScreen\ClientHome\Withdraw\frm_WithdrawMainScreen.Designer.cs">
+      <DependentUpon>frm_WithdrawMainScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClientScreen\ClientHome\Withdraw\frm_WithdrawSecondScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClientScreen\ClientHome\Withdraw\frm_WithdrawSecondScreen.Designer.cs">
+      <DependentUpon>frm_WithdrawSecondScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClientScreen\ClientHome\Withdraw\frm_WithdrawThirdScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClientScreen\ClientHome\Withdraw\frm_WithdrawThirdScreen.Designer.cs">
+      <DependentUpon>frm_WithdrawThirdScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClientScreen\ClientSettings\frm_ClientSettings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClientScreen\ClientSettings\frm_ClientSettings.Designer.cs">
+      <DependentUpon>frm_ClientSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClientStartScreen\Sub_StartScreens\ucCreateAccount.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ClientStartScreen\Sub_StartScreens\ucCreateAccount.Designer.cs">
+      <DependentUpon>ucCreateAccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClientStartScreen\Sub_StartScreens\ucEnterPhoneNumber.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ClientStartScreen\Sub_StartScreens\ucEnterPhoneNumber.Designer.cs">
+      <DependentUpon>ucEnterPhoneNumber.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClientStartScreen\Sub_StartScreens\ucGetStarted.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ClientStartScreen\Sub_StartScreens\ucGetStarted.Designer.cs">
+      <DependentUpon>ucGetStarted.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClientScreen\frm_ClientScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClientScreen\frm_ClientScreen.Designer.cs">
+      <DependentUpon>frm_ClientScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClientStartScreen\Sub_StartScreens\ucLogin.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ClientStartScreen\Sub_StartScreens\ucLogin.Designer.cs">
+      <DependentUpon>ucLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClientStartScreen\Sub_StartScreens\ucVerifyEmail.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ClientStartScreen\Sub_StartScreens\ucVerifyEmail.Designer.cs">
+      <DependentUpon>ucVerifyEmail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Util\clsGlobal.cs" />
+    <Compile Include="frm_Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Main.Designer.cs">
+      <DependentUpon>frm_Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClientStartScreen\frm_StartScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClientStartScreen\frm_StartScreen.Designer.cs">
+      <DependentUpon>frm_StartScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Util\clsPagesControler.cs" />
+    <Compile Include="Util\frm_MainBaseClass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Util\frm_MainBaseClass.Designer.cs">
+      <DependentUpon>frm_MainBaseClass.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="ClientScreen\ClientHistorique\frm_TransactionDetailles.resx">
+      <DependentUpon>frm_TransactionDetailles.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClientScreen\ClientHome\Deposit\frm_DepositFirstScreen.resx">
+      <DependentUpon>frm_DepositFirstScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClientScreen\ClientHome\Deposit\frm_DepositMainScreen.resx">
+      <DependentUpon>frm_DepositMainScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClientScreen\ClientHome\Deposit\frm_DepositSecond.resx">
+      <DependentUpon>frm_DepositSecond.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClientScreen\ClientHome\Transfer\frm_TransferFirstScreen.resx">
+      <DependentUpon>frm_TransferFirstScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClientScreen\ClientHome\Transfer\frm_TransferMainScreen.resx">
+      <DependentUpon>frm_TransferMainScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClientScreen\ClientHome\Transfer\frm_TransferSecondScreen.resx">
+      <DependentUpon>frm_TransferSecondScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClientScreen\ClientHome\Transfer\frm_TransferThirdScreen.resx">
+      <DependentUpon>frm_TransferThirdScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClientScreen\ClientHome\ucClientBalanceSummary.resx">
+      <DependentUpon>ucClientBalanceSummary.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClientScreen\ClientHistorique\frm_ClientHistorique.resx">
+      <DependentUpon>frm_ClientHistorique.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClientScreen\ClientHome\frm_ClientHome.resx">
+      <DependentUpon>frm_ClientHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClientScreen\ClientHome\Withdraw\frm_WithdrawFirstScreen.resx">
+      <DependentUpon>frm_WithdrawFirstScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClientScreen\ClientHome\Withdraw\frm_WithdrawMainScreen.resx">
+      <DependentUpon>frm_WithdrawMainScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClientScreen\ClientHome\Withdraw\frm_WithdrawSecondScreen.resx">
+      <DependentUpon>frm_WithdrawSecondScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClientScreen\ClientHome\Withdraw\frm_WithdrawThirdScreen.resx">
+      <DependentUpon>frm_WithdrawThirdScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClientScreen\ClientSettings\frm_ClientSettings.resx">
+      <DependentUpon>frm_ClientSettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClientStartScreen\Sub_StartScreens\ucCreateAccount.resx">
+      <DependentUpon>ucCreateAccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClientStartScreen\Sub_StartScreens\ucEnterPhoneNumber.resx">
+      <DependentUpon>ucEnterPhoneNumber.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClientStartScreen\Sub_StartScreens\ucGetStarted.resx">
+      <DependentUpon>ucGetStarted.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClientScreen\frm_ClientScreen.resx">
+      <DependentUpon>frm_ClientScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClientStartScreen\Sub_StartScreens\ucLogin.resx">
+      <DependentUpon>ucLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClientStartScreen\Sub_StartScreens\ucVerifyEmail.resx">
+      <DependentUpon>ucVerifyEmail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Main.resx">
+      <DependentUpon>frm_Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClientStartScreen\frm_StartScreen.resx">
+      <DependentUpon>frm_StartScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Util\frm_MainBaseClass.resx">
+      <DependentUpon>frm_MainBaseClass.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\Bank_Business_Layer\Bank_Business_Layer.csproj">
+      <Project>{e1cbe111-6a39-4212-90c3-6cce7f771c17}</Project>
+      <Name>Bank_Business_Layer</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LOGO.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img_Background.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img_Deposit_Withdraw.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img_Transfer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logo_and_Title.PNG" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

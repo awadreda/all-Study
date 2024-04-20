@@ -1,0 +1,16 @@
+C:\Tutourials\Projects\C#\MyProjects\MyBankProject\ConSoleBankAPP\MyBanKProjectConsole\BankSystemwidowsForm\bin\Debug\BankSystemwidowsForm.exe.config
+C:\Tutourials\Projects\C#\MyProjects\MyBankProject\ConSoleBankAPP\MyBanKProjectConsole\BankSystemwidowsForm\bin\Debug\BankSystemwidowsForm.exe
+C:\Tutourials\Projects\C#\MyProjects\MyBankProject\ConSoleBankAPP\MyBanKProjectConsole\BankSystemwidowsForm\bin\Debug\BankSystemwidowsForm.pdb
+C:\Tutourials\Projects\C#\MyProjects\MyBankProject\ConSoleBankAPP\MyBanKProjectConsole\BankSystemwidowsForm\bin\Debug\BankbusinessLayer.dll
+C:\Tutourials\Projects\C#\MyProjects\MyBankProject\ConSoleBankAPP\MyBanKProjectConsole\BankSystemwidowsForm\bin\Debug\BankDataAccessLayer.dll
+C:\Tutourials\Projects\C#\MyProjects\MyBankProject\ConSoleBankAPP\MyBanKProjectConsole\BankSystemwidowsForm\bin\Debug\BankbusinessLayer.pdb
+C:\Tutourials\Projects\C#\MyProjects\MyBankProject\ConSoleBankAPP\MyBanKProjectConsole\BankSystemwidowsForm\bin\Debug\BankDataAccessLayer.pdb
+C:\Tutourials\Projects\C#\MyProjects\MyBankProject\ConSoleBankAPP\MyBanKProjectConsole\BankSystemwidowsForm\obj\Debug\BankSystemwidowsForm.csprojAssemblyReference.cache
+C:\Tutourials\Projects\C#\MyProjects\MyBankProject\ConSoleBankAPP\MyBanKProjectConsole\BankSystemwidowsForm\obj\Debug\BankSystemwidowsForm.Properties.Resources.resources
+C:\Tutourials\Projects\C#\MyProjects\MyBankProject\ConSoleBankAPP\MyBanKProjectConsole\BankSystemwidowsForm\obj\Debug\BankSystemwidowsForm.csproj.GenerateResource.cache
+C:\Tutourials\Projects\C#\MyProjects\MyBankProject\ConSoleBankAPP\MyBanKProjectConsole\BankSystemwidowsForm\obj\Debug\BankSystemwidowsForm.csproj.CoreCompileInputs.cache
+C:\Tutourials\Projects\C#\MyProjects\MyBankProject\ConSoleBankAPP\MyBanKProjectConsole\BankSystemwidowsForm\obj\Debug\BankSystemwidowsForm.csproj.CopyComplete
+C:\Tutourials\Projects\C#\MyProjects\MyBankProject\ConSoleBankAPP\MyBanKProjectConsole\BankSystemwidowsForm\obj\Debug\BankSystemwidowsForm.exe
+C:\Tutourials\Projects\C#\MyProjects\MyBankProject\ConSoleBankAPP\MyBanKProjectConsole\BankSystemwidowsForm\obj\Debug\BankSystemwidowsForm.pdb
+C:\Tutourials\Projects\C#\MyProjects\MyBankProject\ConSoleBankAPP\MyBanKProjectConsole\BankSystemwidowsForm\obj\Debug\BankSystemwidowsForm.testClientScreen.resources
+C:\Tutourials\Projects\C#\MyProjects\MyBankProject\ConSoleBankAPP\MyBanKProjectConsole\BankSystemwidowsForm\obj\Debug\BankSystemwidowsForm.frmClientsScreen.resources
