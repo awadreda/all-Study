@@ -114,6 +114,71 @@ namespace BankDataAccessLayer
 
 
 
+
+        public static bool FindByUserNameandPassWord(ref int UserID, ref int PersonID,  string UserName, ref string FirstName,
+            ref string LastName, ref string Email, ref string Phone,
+             string PassWord, ref int Permission)
+        {
+            bool isFound = false;
+
+            SqlConnection connection = new SqlConnection(DataConnectionSettings.ConnectionString);
+            //string query = @"select *from (  SELECT dbo.Users.UserID, dbo.Persons.*, dbo.Users.UserName, dbo.Users.PassWord, dbo.Users.Permission FROM dbo.Users INNER JOIN dbo.Persons " +
+            //    "ON dbo.Users.Person_ID = dbo.Persons.PersonID) as t1 " +
+            //    "where UserID=@UserID";
+
+            string query = @" select *from UserListView  where UserName= @UserName and PassWord = @PassWord ";
+
+            SqlCommand command = new SqlCommand(query, connection);
+            command.Parameters.AddWithValue("@UserName", UserName);
+            command.Parameters.AddWithValue("@PassWord", PassWord);
+            try
+            {
+                connection.Open();
+                SqlDataReader reader = command.ExecuteReader();
+
+
+                if (reader.Read()) // Check if any data is found
+                {
+                    isFound = true;
+                    UserID = Convert.ToInt32(reader["UserID"]);
+                    PersonID = Convert.ToInt32(reader["PersonID"]);
+                    UserName = reader["UserName"].ToString();
+                    FirstName = reader["FirstName"].ToString();
+                    LastName = reader["LastName"].ToString();
+                    Email = reader["Email"].ToString();
+                    Phone = reader["Phone"].ToString();
+                    PassWord = reader["PassWord"].ToString();
+                    Permission = Convert.ToInt32(reader["Permission"]);
+
+
+                }
+                reader.Close();
+
+            }
+            catch (Exception ex)
+            {
+                isFound = false;
+                // Handle exceptions
+                //Console.WriteLine("Error: " + ex.Message);
+            }
+            finally
+            {
+                connection.Close();
+            }
+
+            return isFound;
+        }
+
+
+
+
+
+
+
+
+
+
+
         public static DataTable GitAllUsers()
         {
             DataTable dt = new DataTable();

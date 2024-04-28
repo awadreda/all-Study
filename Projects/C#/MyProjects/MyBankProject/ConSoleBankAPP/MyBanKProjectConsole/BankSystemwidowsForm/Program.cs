@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using BankSystemwidowsForm.Main;
+//using BankSystemwidowsForm.
 
 namespace BankSystemwidowsForm
 {
@@ -16,7 +18,11 @@ namespace BankSystemwidowsForm
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmClientsScreen());
+           
+            
+            Application.Run(new LoginScreen());
+
+            
         }
     }
 }

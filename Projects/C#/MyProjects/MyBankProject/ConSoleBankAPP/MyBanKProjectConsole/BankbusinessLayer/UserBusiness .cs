@@ -67,12 +67,37 @@ namespace BankbusinessLayer
         }
 
 
+        public static UserBussinees FindUserNameAndPassword(string UserName,string Password)
+        {
+            int UserID = -1;
+            int PersonID = -1;
+            string FirstName = "";
+            string LastName = "";
+            string Email = "";
+            string Phone = "";
+            
+            
+            int Permission = -1;
+
+            if (UserData.FindByUserNameandPassWord(ref UserID, ref PersonID,  UserName, ref FirstName, ref LastName, ref Email, ref Phone,  Password, ref Permission))
+            {
+                return new UserBussinees(UserID, UserName, Password, Permission, PersonID, FirstName, LastName, Email, Phone);
+            }
+            else
+            {
+                return null;
+            }
+        }
+
+
+
+
         private bool _AddNewUser()
         {
             int Userid = -1;
             int Personid = -1;
 
-            if (UserData.AddNewUser(ref Userid, ref Personid, this.UserName, this.Password, this.personID, this.FirstName, this.LastName, this.Email, this.Email))
+            if (UserData.AddNewUser(ref Userid, ref Personid, this.UserName, this.Password,this.Permission, this.FirstName, this.LastName, this.Email, this.Email))
             {
                 this.personID = Personid;
                 this.User_ID = Userid;
@@ -128,6 +153,16 @@ namespace BankbusinessLayer
         public static bool DeleteUserbyID(int ID)
         {
             return UserData.DeleteUser(ID);
+        }
+
+
+
+        public static DataTable GetTransActionList()
+        {
+            
+
+            return TransActionData.GetAllTransAction();
+
         }
     }
 }

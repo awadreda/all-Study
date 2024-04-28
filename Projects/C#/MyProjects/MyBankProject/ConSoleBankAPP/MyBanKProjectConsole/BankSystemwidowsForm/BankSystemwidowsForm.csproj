@@ -46,11 +46,59 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CLients\frmAddEditFormClinet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CLients\frmAddEditFormClinet.Designer.cs">
+      <DependentUpon>frmAddEditFormClinet.cs</DependentUpon>
+    </Compile>
     <Compile Include="CLients\frmClientsScreen.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="CLients\frmClientsScreen.Designer.cs">
       <DependentUpon>frmClientsScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login\LoginScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login\LoginScreen.Designer.cs">
+      <DependentUpon>LoginScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TransActions\DepositePopWidow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TransActions\DepositePopWidow.Designer.cs">
+      <DependentUpon>DepositePopWidow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TransActions\TransActionsList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TransActions\TransActionsList.Designer.cs">
+      <DependentUpon>TransActionsList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TransActions\TransferPopWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TransActions\TransferPopWindow.Designer.cs">
+      <DependentUpon>TransferPopWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TransActions\WithDrawPopWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TransActions\WithDrawPopWindow.Designer.cs">
+      <DependentUpon>WithDrawPopWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Users\frmAddEditUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Users\frmAddEditUser.Designer.cs">
+      <DependentUpon>frmAddEditUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main\MainScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main\MainScreen.Designer.cs">
+      <DependentUpon>MainScreen.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -60,8 +108,38 @@
     <Compile Include="CLients\testClientScreen.Designer.cs">
       <DependentUpon>testClientScreen.cs</DependentUpon>
     </Compile>
+    <Compile Include="Users\UserScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Users\UserScreen.Designer.cs">
+      <DependentUpon>UserScreen.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="CLients\frmAddEditFormClinet.resx">
+      <DependentUpon>frmAddEditFormClinet.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CLients\frmClientsScreen.resx">
       <DependentUpon>frmClientsScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login\LoginScreen.resx">
+      <DependentUpon>LoginScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TransActions\DepositePopWidow.resx">
+      <DependentUpon>DepositePopWidow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TransActions\TransActionsList.resx">
+      <DependentUpon>TransActionsList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TransActions\TransferPopWindow.resx">
+      <DependentUpon>TransferPopWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TransActions\WithDrawPopWindow.resx">
+      <DependentUpon>WithDrawPopWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Users\frmAddEditUser.resx">
+      <DependentUpon>frmAddEditUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\MainScreen.resx">
+      <DependentUpon>MainScreen.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -71,9 +149,13 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="CLients\testClientScreen.resx">
       <DependentUpon>testClientScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Users\UserScreen.resx">
+      <DependentUpon>UserScreen.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -93,6 +175,12 @@
       <Project>{d246e0f8-a56f-401a-b311-01c96ed06d96}</Project>
       <Name>BankbusinessLayer</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngtree-concept-banking-logo-png-image_712961.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vecteezy_antique-columns-and-temple-clipart-design-illustration_9380458.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

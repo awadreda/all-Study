@@ -14,3 +14,12 @@ C:\Tutourials\Projects\C#\MyProjects\MyBankProject\ConSoleBankAPP\MyBanKProjectC
 C:\Tutourials\Projects\C#\MyProjects\MyBankProject\ConSoleBankAPP\MyBanKProjectConsole\BankSystemwidowsForm\obj\Debug\BankSystemwidowsForm.pdb
 C:\Tutourials\Projects\C#\MyProjects\MyBankProject\ConSoleBankAPP\MyBanKProjectConsole\BankSystemwidowsForm\obj\Debug\BankSystemwidowsForm.testClientScreen.resources
 C:\Tutourials\Projects\C#\MyProjects\MyBankProject\ConSoleBankAPP\MyBanKProjectConsole\BankSystemwidowsForm\obj\Debug\BankSystemwidowsForm.frmClientsScreen.resources
+C:\Tutourials\Projects\C#\MyProjects\MyBankProject\ConSoleBankAPP\MyBanKProjectConsole\BankSystemwidowsForm\obj\Debug\BankSystemwidowsForm.CLients.frmAddEditFormClinet.resources
+C:\Tutourials\Projects\C#\MyProjects\MyBankProject\ConSoleBankAPP\MyBanKProjectConsole\BankSystemwidowsForm\obj\Debug\BankSystemwidowsForm.Users.UserScreen.resources
+C:\Tutourials\Projects\C#\MyProjects\MyBankProject\ConSoleBankAPP\MyBanKProjectConsole\BankSystemwidowsForm\obj\Debug\BankSystemwidowsForm.Main.MainScreen.resources
+C:\Tutourials\Projects\C#\MyProjects\MyBankProject\ConSoleBankAPP\MyBanKProjectConsole\BankSystemwidowsForm\obj\Debug\BankSystemwidowsForm.Main.frmAddEditUser.resources
+C:\Tutourials\Projects\C#\MyProjects\MyBankProject\ConSoleBankAPP\MyBanKProjectConsole\BankSystemwidowsForm\obj\Debug\BankSystemwidowsForm.LoginScreen.resources
+C:\Tutourials\Projects\C#\MyProjects\MyBankProject\ConSoleBankAPP\MyBanKProjectConsole\BankSystemwidowsForm\obj\Debug\BankSystemwidowsForm.TransActions.DepositePopWidow.resources
+C:\Tutourials\Projects\C#\MyProjects\MyBankProject\ConSoleBankAPP\MyBanKProjectConsole\BankSystemwidowsForm\obj\Debug\BankSystemwidowsForm.TransActions.WithDrawPopWindow.resources
+C:\Tutourials\Projects\C#\MyProjects\MyBankProject\ConSoleBankAPP\MyBanKProjectConsole\BankSystemwidowsForm\obj\Debug\BankSystemwidowsForm.TransActions.TransferPopWindow.resources
+C:\Tutourials\Projects\C#\MyProjects\MyBankProject\ConSoleBankAPP\MyBanKProjectConsole\BankSystemwidowsForm\obj\Debug\BankSystemwidowsForm.TransActions.TransActionsList.resources

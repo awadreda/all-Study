@@ -131,10 +131,49 @@ namespace BankbusinessLayer
         }
 
 
+
+
+        public static ClientsBusiness FindClientByName(string FirstName)
+        {
+            int ClintID = -1;
+            int PersonID = -1;
+            FirstName = "";
+            string LastName = "";
+            string Phone = "";
+            string Email = "";
+
+            string AccountNumber = "";
+            string PINCODE = "";
+            float AccountBalance = 0;
+
+            if (ClientsData.getClientByFirstName(ref Email,ref ClintID,ref PersonID,FirstName,ref LastName,ref Phone,ref AccountNumber,ref PINCODE,ref AccountBalance))
+            {
+                return new ClientsBusiness(ClintID, PersonID, FirstName, LastName, Email, Phone, AccountNumber, PINCODE, AccountBalance);
+
+            }
+            else
+            {
+                return null;
+            }
+
+
+
+        }
+
+
+
+
+
         public static DataTable GetClientList()
         {
             return ClientsData.GetAllClientsFromDb();
         }
+
+        public static DataTable GetTotalBalances()
+        {
+            return ClientsData.GetTotalBanlancesFromDB();
+        }
+
 
 
         public static bool isClientExistbyID(int ID)

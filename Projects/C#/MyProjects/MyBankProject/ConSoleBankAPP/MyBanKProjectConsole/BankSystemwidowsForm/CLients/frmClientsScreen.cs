@@ -8,6 +8,10 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using BankbusinessLayer;
+using BankSystemwidowsForm.TransActions;
+
+using BankSystemwidowsForm.CLients;
+
 
 namespace BankSystemwidowsForm
 {
@@ -697,9 +701,84 @@ namespace BankSystemwidowsForm
             MangeScreens((Button)sender);
         }
 
-        private void pDeleteScreen_Paint(object sender, PaintEventArgs e)
+        private void dgvListClients_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
+        }
+
+       //ContaxtMinue
+
+
+        private void deleteToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            DeleteClient((int)dgvListClients.CurrentRow.Cells[0].Value);
+            RefreshListClients();
+
+        }
+
+        private void editClientToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmAddEditFormClinet frm = new frmAddEditFormClinet( (int)dgvListClients.CurrentRow.Cells[0].Value);
+            frm.ShowDialog();
+            RefreshListClients();
+        }
+
+
+
+        private void pListClient_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void label11_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtpEditPinCode_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void addNewToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmAddEditFormClinet frm = new frmAddEditFormClinet(-1);
+            frm.ShowDialog();
+            RefreshListClients();
+
+        }
+
+        private void depToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            int id = (int)dgvListClients.CurrentRow.Cells[0].Value;
+            DepositePopWidow frm = new DepositePopWidow(id);
+            frm.ShowDialog();
+            RefreshListClients();
+        }
+
+        private void withDrawToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+            int id = (int)dgvListClients.CurrentRow.Cells[0].Value;
+            WithDrawPopWindow frm = new WithDrawPopWindow(id);
+            frm.ShowDialog();
+            RefreshListClients();
+
+        }
+
+        private void transActionsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void transferToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            int id = (int)dgvListClients.CurrentRow.Cells[0].Value;
+
+            TransferPopWindow transfer = new TransferPopWindow(id);
+            transfer.ShowDialog();
+            RefreshListClients();
+  
         }
     }
 }

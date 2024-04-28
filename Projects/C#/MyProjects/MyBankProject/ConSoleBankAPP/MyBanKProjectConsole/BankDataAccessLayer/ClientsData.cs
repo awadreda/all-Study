@@ -43,7 +43,7 @@ namespace BankDataAccessLayer
                     AccountNumber = (string)reader["AccountNumber"];
                     PINCODE = (string)reader["PINCode"];
                     AccountBalance = Convert.ToSingle( reader["AccountBalance"]);
-
+                    
 
 
                 }
@@ -124,6 +124,68 @@ namespace BankDataAccessLayer
             return isFound;
 
         }
+
+
+
+
+        public static bool getClientByFirstName(ref string Email, ref int ClientID, ref int PersonID,  string FirstName, ref string LastName, ref string Phone, ref string AccountNumber
+          , ref string PINCODE, ref float AccountBalance)
+        {
+            bool isFound = false;
+
+
+
+            SqlConnection connection = new SqlConnection(DataConnectionSettings.ConnectionString);
+
+            string query = @" select *from Clients_Persons_List
+						 where FirstName=@FirstName;";
+
+            SqlCommand command = new SqlCommand(query, connection);
+
+            command.Parameters.AddWithValue("@FirstName", FirstName);
+
+            try
+            {
+                connection.Open();
+
+                SqlDataReader reader = command.ExecuteReader();
+
+                if (reader.Read())
+                {
+                    ClientID = (int)reader["ClientID"];
+                    PersonID = (int)reader["PersonID"];
+                    FirstName = (string)reader["FirstName"];
+                    LastName = (string)reader["LastName"];
+                    Phone = (string)reader["Phone"];
+                    AccountNumber = (string)reader["AccountNumber"];
+                    PINCODE = (string)reader["PINCode"];
+                    AccountBalance = Convert.ToSingle(reader["AccountBalance"]);
+
+
+
+                }
+
+                reader.Close();
+
+                isFound = true;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("erro " + ex.Message);
+                isFound = false;
+            }
+            finally
+            {
+                connection.Close();
+            }
+
+
+            return isFound;
+
+        }
+
+
+
 
 
         public static bool getClientByAccountNumber(string AccountNumber, ref string Email, ref int ClientID, ref int PersonID, ref string FirstName, ref string LastName, ref string Phone
@@ -227,6 +289,53 @@ namespace BankDataAccessLayer
 
 
         }
+
+
+        public static DataTable GetTotalBanlancesFromDB()
+        {
+
+            DataTable CLientsDt = new DataTable();
+
+            SqlConnection connection = new SqlConnection(DataConnectionSettings.ConnectionString);
+
+            string Query = "select * from Total_Clients_Balances;";
+
+            SqlCommand command = new SqlCommand(Query, connection);
+
+            try
+            {
+                connection.Open()
+                    ;
+
+                SqlDataReader reader = command.ExecuteReader();
+
+                if (reader.HasRows)
+                {
+                    CLientsDt.Load(reader);
+                }
+
+                reader.Close();
+
+            }
+            catch
+            {
+
+            }
+            finally
+            {
+                connection.Close();
+            }
+
+
+            return CLientsDt;
+
+
+
+        }
+
+
+
+
 
 
 

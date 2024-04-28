@@ -28,13 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.btnFind = new System.Windows.Forms.Button();
             this.pFindScreen = new System.Windows.Forms.Panel();
             this.txtClientID = new System.Windows.Forms.MaskedTextBox();
             this.btnSearch = new System.Windows.Forms.Button();
             this.label9 = new System.Windows.Forms.Label();
             this.pCard = new System.Windows.Forms.Panel();
-            this.pbClinetImage = new System.Windows.Forms.PictureBox();
             this.txtAccountBanlance = new System.Windows.Forms.MaskedTextBox();
             this.txtAcountNumber = new System.Windows.Forms.TextBox();
             this.txtPhone = new System.Windows.Forms.MaskedTextBox();
@@ -55,6 +55,14 @@
             this.pListClient = new System.Windows.Forms.Panel();
             this.label10 = new System.Windows.Forms.Label();
             this.dgvListClients = new System.Windows.Forms.DataGridView();
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.addNewToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.editClientToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.deleteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.transActionsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.depToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.withDrawToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.transferToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.btnEditScreen = new System.Windows.Forms.Button();
             this.label21 = new System.Windows.Forms.Label();
             this.btnSearchToEdit = new System.Windows.Forms.Button();
@@ -62,7 +70,6 @@
             this.label12 = new System.Windows.Forms.Label();
             this.linkRemovePicture = new System.Windows.Forms.LinkLabel();
             this.lnkSetPicture = new System.Windows.Forms.LinkLabel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.txtpEditAccountBanlance = new System.Windows.Forms.MaskedTextBox();
             this.txtpEditAcountNumber = new System.Windows.Forms.TextBox();
             this.txtpEditPhone = new System.Windows.Forms.MaskedTextBox();
@@ -95,7 +102,6 @@
             this.label22 = new System.Windows.Forms.Label();
             this.linkAddRemovePicture = new System.Windows.Forms.LinkLabel();
             this.lnkAddSetPicture = new System.Windows.Forms.LinkLabel();
-            this.pbAddClinetImage = new System.Windows.Forms.PictureBox();
             this.txtAddAccountBanlance = new System.Windows.Forms.MaskedTextBox();
             this.txtAddAcountNumber = new System.Windows.Forms.TextBox();
             this.txtAddPhone = new System.Windows.Forms.MaskedTextBox();
@@ -118,7 +124,6 @@
             this.btnSearchforDelete = new System.Windows.Forms.Button();
             this.label31 = new System.Windows.Forms.Label();
             this.pDeleteCard = new System.Windows.Forms.Panel();
-            this.pbDeleteClinetImage = new System.Windows.Forms.PictureBox();
             this.txtDeleteAccountBanlance = new System.Windows.Forms.MaskedTextBox();
             this.txtDeleteAcountNumber = new System.Windows.Forms.TextBox();
             this.txtDeletePhone = new System.Windows.Forms.MaskedTextBox();
@@ -136,27 +141,32 @@
             this.lblDeleteClientID = new System.Windows.Forms.Label();
             this.label40 = new System.Windows.Forms.Label();
             this.btnDeleteScreen = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pbClinetImage = new System.Windows.Forms.PictureBox();
+            this.pbAddClinetImage = new System.Windows.Forms.PictureBox();
+            this.pbDeleteClinetImage = new System.Windows.Forms.PictureBox();
             this.pFindScreen.SuspendLayout();
             this.pCard.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbClinetImage)).BeginInit();
             this.pListClient.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvListClients)).BeginInit();
+            this.contextMenuStrip1.SuspendLayout();
             this.pEditCard.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel3.SuspendLayout();
             this.pEdit.SuspendLayout();
             this.pAddNew.SuspendLayout();
             this.pAddNewCard.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbAddClinetImage)).BeginInit();
             this.pDeleteScreen.SuspendLayout();
             this.pDeleteCard.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbClinetImage)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbAddClinetImage)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbDeleteClinetImage)).BeginInit();
             this.SuspendLayout();
             // 
             // btnFind
             // 
             this.btnFind.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnFind.Location = new System.Drawing.Point(12, 216);
+            this.btnFind.Location = new System.Drawing.Point(12, 212);
             this.btnFind.Name = "btnFind";
             this.btnFind.Size = new System.Drawing.Size(136, 41);
             this.btnFind.TabIndex = 0;
@@ -231,14 +241,6 @@
             this.pCard.Size = new System.Drawing.Size(630, 427);
             this.pCard.TabIndex = 40;
             this.pCard.Visible = false;
-            // 
-            // pbClinetImage
-            // 
-            this.pbClinetImage.Location = new System.Drawing.Point(427, 191);
-            this.pbClinetImage.Name = "pbClinetImage";
-            this.pbClinetImage.Size = new System.Drawing.Size(170, 149);
-            this.pbClinetImage.TabIndex = 54;
-            this.pbClinetImage.TabStop = false;
             // 
             // txtAccountBanlance
             // 
@@ -409,6 +411,7 @@
             this.pListClient.Size = new System.Drawing.Size(737, 521);
             this.pListClient.TabIndex = 41;
             this.pListClient.Visible = false;
+            this.pListClient.Paint += new System.Windows.Forms.PaintEventHandler(this.pListClient_Paint);
             // 
             // label10
             // 
@@ -423,15 +426,80 @@
             // dgvListClients
             // 
             this.dgvListClients.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvListClients.ContextMenuStrip = this.contextMenuStrip1;
             this.dgvListClients.Location = new System.Drawing.Point(13, 97);
             this.dgvListClients.Name = "dgvListClients";
             this.dgvListClients.Size = new System.Drawing.Size(713, 380);
             this.dgvListClients.TabIndex = 0;
+            this.dgvListClients.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvListClients_CellContentClick);
+            // 
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.addNewToolStripMenuItem,
+            this.editClientToolStripMenuItem,
+            this.transActionsToolStripMenuItem,
+            this.deleteToolStripMenuItem});
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(181, 114);
+            // 
+            // addNewToolStripMenuItem
+            // 
+            this.addNewToolStripMenuItem.Name = "addNewToolStripMenuItem";
+            this.addNewToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.addNewToolStripMenuItem.Text = "AddNew";
+            this.addNewToolStripMenuItem.Click += new System.EventHandler(this.addNewToolStripMenuItem_Click);
+            // 
+            // editClientToolStripMenuItem
+            // 
+            this.editClientToolStripMenuItem.Name = "editClientToolStripMenuItem";
+            this.editClientToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.editClientToolStripMenuItem.Text = "Edit Client";
+            this.editClientToolStripMenuItem.Click += new System.EventHandler(this.editClientToolStripMenuItem_Click);
+            // 
+            // deleteToolStripMenuItem
+            // 
+            this.deleteToolStripMenuItem.Name = "deleteToolStripMenuItem";
+            this.deleteToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.deleteToolStripMenuItem.Text = "Delete";
+            this.deleteToolStripMenuItem.Click += new System.EventHandler(this.deleteToolStripMenuItem_Click);
+            // 
+            // transActionsToolStripMenuItem
+            // 
+            this.transActionsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.depToolStripMenuItem,
+            this.withDrawToolStripMenuItem,
+            this.transferToolStripMenuItem});
+            this.transActionsToolStripMenuItem.Name = "transActionsToolStripMenuItem";
+            this.transActionsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.transActionsToolStripMenuItem.Text = "TransActions";
+            this.transActionsToolStripMenuItem.Click += new System.EventHandler(this.transActionsToolStripMenuItem_Click);
+            // 
+            // depToolStripMenuItem
+            // 
+            this.depToolStripMenuItem.Name = "depToolStripMenuItem";
+            this.depToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.depToolStripMenuItem.Text = "Deposite";
+            this.depToolStripMenuItem.Click += new System.EventHandler(this.depToolStripMenuItem_Click);
+            // 
+            // withDrawToolStripMenuItem
+            // 
+            this.withDrawToolStripMenuItem.Name = "withDrawToolStripMenuItem";
+            this.withDrawToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.withDrawToolStripMenuItem.Text = "WithDraw";
+            this.withDrawToolStripMenuItem.Click += new System.EventHandler(this.withDrawToolStripMenuItem_Click);
+            // 
+            // transferToolStripMenuItem
+            // 
+            this.transferToolStripMenuItem.Name = "transferToolStripMenuItem";
+            this.transferToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.transferToolStripMenuItem.Text = "Transfer";
+            this.transferToolStripMenuItem.Click += new System.EventHandler(this.transferToolStripMenuItem_Click);
             // 
             // btnEditScreen
             // 
             this.btnEditScreen.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEditScreen.Location = new System.Drawing.Point(12, 323);
+            this.btnEditScreen.Location = new System.Drawing.Point(12, 315);
             this.btnEditScreen.Name = "btnEditScreen";
             this.btnEditScreen.Size = new System.Drawing.Size(136, 41);
             this.btnEditScreen.TabIndex = 42;
@@ -517,14 +585,6 @@
             this.lnkSetPicture.TabStop = true;
             this.lnkSetPicture.Text = "Set Picture";
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Location = new System.Drawing.Point(429, 160);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(170, 149);
-            this.pictureBox1.TabIndex = 86;
-            this.pictureBox1.TabStop = false;
-            // 
             // txtpEditAccountBanlance
             // 
             this.txtpEditAccountBanlance.Location = new System.Drawing.Point(223, 344);
@@ -554,6 +614,7 @@
             this.txtpEditPinCode.Name = "txtpEditPinCode";
             this.txtpEditPinCode.Size = new System.Drawing.Size(100, 20);
             this.txtpEditPinCode.TabIndex = 82;
+            this.txtpEditPinCode.TextChanged += new System.EventHandler(this.txtpEditPinCode_TextChanged);
             // 
             // txtpEditLastName
             // 
@@ -666,6 +727,7 @@
             this.label11.TabIndex = 74;
             this.label11.Tag = "Edit";
             this.label11.Text = "Edit CLient";
+            this.label11.Click += new System.EventHandler(this.label11_Click);
             // 
             // panel3
             // 
@@ -866,14 +928,6 @@
             this.lnkAddSetPicture.TabStop = true;
             this.lnkAddSetPicture.Text = "Set Picture";
             // 
-            // pbAddClinetImage
-            // 
-            this.pbAddClinetImage.Location = new System.Drawing.Point(429, 160);
-            this.pbAddClinetImage.Name = "pbAddClinetImage";
-            this.pbAddClinetImage.Size = new System.Drawing.Size(170, 149);
-            this.pbAddClinetImage.TabIndex = 86;
-            this.pbAddClinetImage.TabStop = false;
-            // 
             // txtAddAccountBanlance
             // 
             this.txtAddAccountBanlance.Location = new System.Drawing.Point(223, 344);
@@ -1008,7 +1062,7 @@
             // btnAddNewSCreen
             // 
             this.btnAddNewSCreen.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAddNewSCreen.Location = new System.Drawing.Point(12, 430);
+            this.btnAddNewSCreen.Location = new System.Drawing.Point(12, 418);
             this.btnAddNewSCreen.Name = "btnAddNewSCreen";
             this.btnAddNewSCreen.Size = new System.Drawing.Size(136, 41);
             this.btnAddNewSCreen.TabIndex = 44;
@@ -1030,7 +1084,6 @@
             this.pDeleteScreen.Size = new System.Drawing.Size(722, 625);
             this.pDeleteScreen.TabIndex = 41;
             this.pDeleteScreen.Visible = false;
-            this.pDeleteScreen.Paint += new System.Windows.Forms.PaintEventHandler(this.pDeleteScreen_Paint);
             // 
             // btnDelete
             // 
@@ -1098,14 +1151,6 @@
             this.pDeleteCard.Size = new System.Drawing.Size(630, 427);
             this.pDeleteCard.TabIndex = 40;
             this.pDeleteCard.Visible = false;
-            // 
-            // pbDeleteClinetImage
-            // 
-            this.pbDeleteClinetImage.Location = new System.Drawing.Point(427, 191);
-            this.pbDeleteClinetImage.Name = "pbDeleteClinetImage";
-            this.pbDeleteClinetImage.Size = new System.Drawing.Size(170, 149);
-            this.pbDeleteClinetImage.TabIndex = 54;
-            this.pbDeleteClinetImage.TabStop = false;
             // 
             // txtDeleteAccountBanlance
             // 
@@ -1258,7 +1303,7 @@
             // btnDeleteScreen
             // 
             this.btnDeleteScreen.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDeleteScreen.Location = new System.Drawing.Point(12, 523);
+            this.btnDeleteScreen.Location = new System.Drawing.Point(12, 521);
             this.btnDeleteScreen.Name = "btnDeleteScreen";
             this.btnDeleteScreen.Size = new System.Drawing.Size(136, 41);
             this.btnDeleteScreen.TabIndex = 93;
@@ -1267,21 +1312,53 @@
             this.btnDeleteScreen.UseVisualStyleBackColor = true;
             this.btnDeleteScreen.Click += new System.EventHandler(this.btnDeleteScreen_Click);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Location = new System.Drawing.Point(429, 160);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(170, 149);
+            this.pictureBox1.TabIndex = 86;
+            this.pictureBox1.TabStop = false;
+            // 
+            // pbClinetImage
+            // 
+            this.pbClinetImage.Location = new System.Drawing.Point(427, 191);
+            this.pbClinetImage.Name = "pbClinetImage";
+            this.pbClinetImage.Size = new System.Drawing.Size(170, 149);
+            this.pbClinetImage.TabIndex = 54;
+            this.pbClinetImage.TabStop = false;
+            // 
+            // pbAddClinetImage
+            // 
+            this.pbAddClinetImage.Location = new System.Drawing.Point(429, 160);
+            this.pbAddClinetImage.Name = "pbAddClinetImage";
+            this.pbAddClinetImage.Size = new System.Drawing.Size(170, 149);
+            this.pbAddClinetImage.TabIndex = 86;
+            this.pbAddClinetImage.TabStop = false;
+            // 
+            // pbDeleteClinetImage
+            // 
+            this.pbDeleteClinetImage.Location = new System.Drawing.Point(427, 191);
+            this.pbDeleteClinetImage.Name = "pbDeleteClinetImage";
+            this.pbDeleteClinetImage.Size = new System.Drawing.Size(170, 149);
+            this.pbDeleteClinetImage.TabIndex = 54;
+            this.pbDeleteClinetImage.TabStop = false;
+            // 
             // frmClientsScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(944, 671);
+            this.Controls.Add(this.pListClient);
             this.Controls.Add(this.btnDeleteScreen);
             this.Controls.Add(this.btnAddNewSCreen);
             this.Controls.Add(this.btnEditScreen);
             this.Controls.Add(this.btnListClients);
             this.Controls.Add(this.btnFind);
-            this.Controls.Add(this.pDeleteScreen);
+            this.Controls.Add(this.pEdit);
             this.Controls.Add(this.pFindScreen);
             this.Controls.Add(this.pAddNew);
-            this.Controls.Add(this.pEdit);
-            this.Controls.Add(this.pListClient);
+            this.Controls.Add(this.pDeleteScreen);
             this.Name = "frmClientsScreen";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -1289,13 +1366,12 @@
             this.pFindScreen.PerformLayout();
             this.pCard.ResumeLayout(false);
             this.pCard.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbClinetImage)).EndInit();
             this.pListClient.ResumeLayout(false);
             this.pListClient.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvListClients)).EndInit();
+            this.contextMenuStrip1.ResumeLayout(false);
             this.pEditCard.ResumeLayout(false);
             this.pEditCard.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.pEdit.ResumeLayout(false);
@@ -1304,11 +1380,13 @@
             this.pAddNew.PerformLayout();
             this.pAddNewCard.ResumeLayout(false);
             this.pAddNewCard.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbAddClinetImage)).EndInit();
             this.pDeleteScreen.ResumeLayout(false);
             this.pDeleteScreen.PerformLayout();
             this.pDeleteCard.ResumeLayout(false);
             this.pDeleteCard.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbClinetImage)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbAddClinetImage)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbDeleteClinetImage)).EndInit();
             this.ResumeLayout(false);
 
@@ -1424,6 +1502,14 @@
         private System.Windows.Forms.Label lblDeleteClientID;
         private System.Windows.Forms.Label label40;
         private System.Windows.Forms.Button btnDeleteScreen;
+        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem editClientToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem deleteToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem addNewToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem transActionsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem depToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem withDrawToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem transferToolStripMenuItem;
     }
 }
 
