@@ -50,13 +50,23 @@ namespace BankSystemwidowsForm
             }
             else
             {
+                UserBussinees.RegistLog(Global.CurrentUser.User_ID, 1);
                 MainScreen frm = new MainScreen();
-                this.Hide();
+            
+                    this.Hide();
                 frm.ShowDialog();
                 this.Show();
+                EmptyBoxs();
                 
             }
 
+
+        }
+
+        void EmptyBoxs()
+        {
+            txtUserName.Clear();
+            txtPassword.Clear();
         }
 
         private void button1_Click(object sender, EventArgs e)

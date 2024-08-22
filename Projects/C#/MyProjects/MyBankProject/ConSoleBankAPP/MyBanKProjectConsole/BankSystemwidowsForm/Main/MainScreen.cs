@@ -102,14 +102,16 @@ namespace BankSystemwidowsForm.Main
             Application.Exit();
         }
 
+
+
         private void button1_Click(object sender, EventArgs e)
         {
-
+            UserBussinees.RegistLog(Global.CurrentUser.User_ID, 2);
             Global.CurrentUser = UserBussinees.FindUserNameAndPassword("", "");
+        //    LoginScreen log = new LoginScreen();
+          //  this.Hide();
+     //  log.Show();
             this.Close();
-            //LoginScreen log = new LoginScreen();
-            //this.Hide();
-            //log.ShowDialog();
         }
 
         void LoadData()

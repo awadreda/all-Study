@@ -26,9 +26,15 @@ namespace BankDataAccessLayer
         {
             int rowsAffected = 0;
             SqlConnection connection = new SqlConnection(DataConnectionSettings.ConnectionString);
-            string query = "INSERT INTO [dbo].[TransActionS] ([TransActoin_Type_ID], [ClientID], [Reciver_ID], [User_ID], [TransAction_Date_TIme], [Amount], [Client_Amount_Before], [Client_Amount_After], [Reciver_Amount_Berfore], [Reciver_Amount_After])" +
-                " VALUES (@TransActoin_Type_ID, @ClientID, @Reciver_ID, @User_ID, @TransAction_Date_TIme, @Amount, @Client_Amount_Before, @Client_Amount_After, @Reciver_Amount_Berfore, @Reciver_Amount_After)";
+            //  string query = "INSERT INTO [dbo].[TransActionS] ([TransActoin_Type_ID], [ClientID], [Reciver_ID], [User_ID], [TransAction_Date_TIme], [Amount], [Client_Amount_Before], [Client_Amount_After], [Reciver_Amount_Berfore], [Reciver_Amount_After])" +
+            //    " VALUES (@TransActoin_Type_ID, @ClientID, @Reciver_ID, @User_ID, @TransAction_Date_TIme, @Amount, @Client_Amount_Before, @Client_Amount_After, @Reciver_Amount_Berfore, @Reciver_Amount_After)";
 
+            //   string query = "INSERT INTO [dbo].[TransActionS] ([TransActoin_Type_ID],[User_ID] ,[ClientID],[Reciver_ID][TransAction_Date_TIme]," +
+            //    "[Amount],[Client_Amount_Before],[Client_Amount_After],[Reciver_Amount_Berfore],[Reciver_Amount_After]) " +
+            //"VALUES (@TransActoin_Type_ID, @User_ID, @ClientID, @Reciver_ID, @TransAction_Date_TIme, @Amount, @Client_Amount_Before, @Client_Amount_After, @Reciver_Amount_Berfore, @Reciver_Amount_After)";
+
+            string query = "INSERT INTO [dbo].[TransActionS] ([TransActoin_Type_ID], [User_ID], [ClientID], [Reciver_ID], [TransAction_Date_TIme], [Amount], [Client_Amount_Before], [Client_Amount_After], [Reciver_Amount_Berfore], [Reciver_Amount_After]) " +
+               "VALUES (@TransActoin_Type_ID, @User_ID, @ClientID, @Reciver_ID, @TransAction_Date_TIme, @Amount, @Client_Amount_Before, @Client_Amount_After, @Reciver_Amount_Berfore, @Reciver_Amount_After)";
 
 
 
@@ -71,9 +77,19 @@ namespace BankDataAccessLayer
             int rowsAffected = 0;
             SqlConnection connection = new SqlConnection(DataConnectionSettings.ConnectionString);
 
-            string query = "INSERT INTO [dbo].[TransActionS] ([TransActoin_Type_ID], [ClientID], [Reciver_ID], [User_ID], [TransAction_Date_TIme], " +
-                "[Amount], [Client_Amount_Before], [Client_Amount_After], [Reciver_Amount_Berfore], [Reciver_Amount_After])" +
-             " VALUES (@TransActoin_Type_ID, @ClientID, @Reciver_ID, @User_ID, @TransAction_Date_TIme, @Amount, @Client_Amount_Before, @Client_Amount_After, @Reciver_Amount_Berfore, @Reciver_Amount_After)";
+            //   string query = "INSERT INTO [dbo].[TransActionS] ([TransActoin_Type_ID], [ClientID], [Reciver_ID], [User_ID], [TransAction_Date_TIme], " +
+            //     "[Amount], [Client_Amount_Before], [Client_Amount_After], [Reciver_Amount_Berfore], [Reciver_Amount_After])" +
+            //" VALUES (@TransActoin_Type_ID, @ClientID, @Reciver_ID, @User_ID, @TransAction_Date_TIme, @Amount, @Client_Amount_Before, @Client_Amount_After, @Reciver_Amount_Berfore, @Reciver_Amount_After)";
+
+
+
+           // string query = "INSERT INTO [dbo].[TransActionS] ([TransActoin_Type_ID],[User_ID] ,[ClientID],[Reciver_ID],[TransAction_Date_TIme]," +
+             //  "[Amount],[Client_Amount_Before],[Client_Amount_After],[Reciver_Amount_Berfore],[Reciver_Amount_After]) " +
+   //   "VALUES(@TransActoin_Type_ID, @User_ID, @ClientID, @Reciver_ID, @TransAction_Date_TIme, @Amount, @Client_Amount_Before, @Client_Amount_After, @Reciver_Amount_Berfore, @Reciver_Amount_After)";
+
+            string query = "INSERT INTO [dbo].[TransActionS] ([TransActoin_Type_ID], [User_ID], [ClientID], [Reciver_ID], [TransAction_Date_TIme], [Amount], [Client_Amount_Before], [Client_Amount_After], [Reciver_Amount_Berfore], [Reciver_Amount_After]) " +
+                "VALUES (@TransActoin_Type_ID, @User_ID, @ClientID, @Reciver_ID, @TransAction_Date_TIme, @Amount, @Client_Amount_Before, @Client_Amount_After, @Reciver_Amount_Berfore, @Reciver_Amount_After)";
+
 
 
             SqlCommand command = new SqlCommand(query, connection);

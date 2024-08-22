@@ -452,24 +452,26 @@ namespace MyBanKProjectConsole
 
 
             Console.WriteLine("\n========================================\n");
-            //ListUser();
+            //  ListUser();
 
+
+            ListClient();
 
             //UpdateUser(1002);
 
-            //isExistUser(105);
+            //   isExistUser(105);
 
-
+            //FIndUSerbyID(1);
             //  DeleteUser(1003);
 
             //AddNewUser();
 
-            //Deposite(500, 2, 2);
+            Deposite(500, 2, 2);
             //withDraw(500, 2, 1);
 
-           TransFer(55, 2, 4, 2);
+          // TransFer(55, 2, 4, 2);
 
-           TransActionLIst();
+           //TransActionLIst();
 
             Console.ReadKey();
 

@@ -36,28 +36,37 @@
             this.addNewToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.editUserToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.deleteUserToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.tListLog = new System.Windows.Forms.TabPage();
+            this.dgvRefisterLogins = new System.Windows.Forms.DataGridView();
             this.tFindUser = new System.Windows.Forms.TabPage();
             this.tAddNewUser = new System.Windows.Forms.TabPage();
             this.tEditUser = new System.Windows.Forms.TabPage();
             this.tDeleteUser = new System.Windows.Forms.TabPage();
+            this.tabPage1 = new System.Windows.Forms.TabPage();
             this.tabControl1.SuspendLayout();
             this.tListUsers.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvListUser)).BeginInit();
             this.contextMenuStrip1.SuspendLayout();
+            this.tListLog.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvRefisterLogins)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
             // 
             this.tabControl1.Controls.Add(this.tListUsers);
+            this.tabControl1.Controls.Add(this.tListLog);
             this.tabControl1.Controls.Add(this.tFindUser);
             this.tabControl1.Controls.Add(this.tAddNewUser);
             this.tabControl1.Controls.Add(this.tEditUser);
             this.tabControl1.Controls.Add(this.tDeleteUser);
+            this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Location = new System.Drawing.Point(34, 48);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
             this.tabControl1.Size = new System.Drawing.Size(966, 692);
             this.tabControl1.TabIndex = 0;
+            this.tabControl1.SelectedIndexChanged += new System.EventHandler(this.tabControl1_SelectedIndexChanged);
+            this.tabControl1.Selected += new System.Windows.Forms.TabControlEventHandler(this.tabControl1_Selected);
             // 
             // tListUsers
             // 
@@ -113,6 +122,26 @@
             this.deleteUserToolStripMenuItem.Text = "Delete User";
             this.deleteUserToolStripMenuItem.Click += new System.EventHandler(this.deleteUserToolStripMenuItem_Click);
             // 
+            // tListLog
+            // 
+            this.tListLog.Controls.Add(this.dgvRefisterLogins);
+            this.tListLog.Location = new System.Drawing.Point(4, 22);
+            this.tListLog.Name = "tListLog";
+            this.tListLog.Size = new System.Drawing.Size(958, 666);
+            this.tListLog.TabIndex = 6;
+            this.tListLog.Text = "Register Logins ";
+            this.tListLog.UseVisualStyleBackColor = true;
+            // 
+            // dgvRefisterLogins
+            // 
+            this.dgvRefisterLogins.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvRefisterLogins.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgvRefisterLogins.Location = new System.Drawing.Point(0, 0);
+            this.dgvRefisterLogins.Name = "dgvRefisterLogins";
+            this.dgvRefisterLogins.Size = new System.Drawing.Size(958, 666);
+            this.dgvRefisterLogins.TabIndex = 0;
+            this.dgvRefisterLogins.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick_1);
+            // 
             // tFindUser
             // 
             this.tFindUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -158,6 +187,15 @@
             this.tDeleteUser.UseVisualStyleBackColor = true;
             this.tDeleteUser.Click += new System.EventHandler(this.tDeleteUser_Click);
             // 
+            // tabPage1
+            // 
+            this.tabPage1.Location = new System.Drawing.Point(4, 22);
+            this.tabPage1.Name = "tabPage1";
+            this.tabPage1.Size = new System.Drawing.Size(958, 666);
+            this.tabPage1.TabIndex = 5;
+            this.tabPage1.Text = "tabPage1";
+            this.tabPage1.UseVisualStyleBackColor = true;
+            // 
             // UserScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -171,6 +209,8 @@
             this.tListUsers.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvListUser)).EndInit();
             this.contextMenuStrip1.ResumeLayout(false);
+            this.tListLog.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvRefisterLogins)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -188,5 +228,8 @@
         private System.Windows.Forms.ToolStripMenuItem editUserToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem deleteUserToolStripMenuItem;
         private System.Windows.Forms.DataGridView dgvListUser;
+        private System.Windows.Forms.TabPage tListLog;
+        private System.Windows.Forms.DataGridView dgvRefisterLogins;
+        private System.Windows.Forms.TabPage tabPage1;
     }
 }

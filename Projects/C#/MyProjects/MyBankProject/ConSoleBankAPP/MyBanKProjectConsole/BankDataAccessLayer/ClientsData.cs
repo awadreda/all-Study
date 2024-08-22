@@ -253,9 +253,12 @@ namespace BankDataAccessLayer
 
             SqlConnection connection = new SqlConnection(DataConnectionSettings.ConnectionString);
 
-            string Query = " SELECT    dbo.Clients.ClientID, dbo.Persons.PersonID, dbo.Persons.FirstName, dbo.Persons.LastName, dbo.Persons.Email, dbo.Persons.Phone, dbo.Clients.AccountNumber, dbo.Clients.PINCode, dbo.Clients.AccountBalance " +
-                "FROM dbo.Persons INNER JOIN    " +
-                "  dbo.Clients ON dbo.Persons.PersonID = dbo.Clients.PersonID";
+            //string Query = " SELECT    dbo.Clients.ClientID, dbo.Persons.PersonID, dbo.Persons.FirstName, dbo.Persons.LastName, dbo.Persons.Email, dbo.Persons.Phone, dbo.Clients.AccountNumber, dbo.Clients.PINCode, dbo.Clients.AccountBalance " +
+              //  "FROM dbo.Persons INNER JOIN    " +
+               // "  dbo.Clients ON dbo.Persons.PersonID = dbo.Clients.PersonID";
+
+            string Query = "select *from Clients_Persons_List;";
+
 
             SqlCommand command = new SqlCommand(Query, connection);
 
@@ -629,7 +632,7 @@ namespace BankDataAccessLayer
 
         //  worng  =>    string quary = "delete from Persons where PersonID = (select Clients.PersonID from Clients where ClientID = @Id) ; DELETE FROM clients WHERE ClientID=@Id; ";
 
-            string quaryAfterModfing = @"DELETE FROM Clients WHERE ClientID = @Id; DELETE FROM Persons WHERE PersonID NOT IN (SELECT PersonID FROM Clients) AND PersonID NOT IN (SELECT Person_ID FROM Users);";
+            string quaryAfterModfing = @"DELETE FROM Clients WHERE ClientID = @Id; DELETE FROM Persons WHERE PersonID NOT IN (SELECT PersonID FROM Clients) AND PersonID NOT IN (SELECT PersonID FROM Users);";
 
 
             SqlCommand command = new SqlCommand(quaryAfterModfing, connection);

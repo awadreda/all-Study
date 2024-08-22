@@ -164,5 +164,51 @@ namespace BankbusinessLayer
             return TransActionData.GetAllTransAction();
 
         }
+
+            
+
+
+
+        
+        ///////////////////////////////logRegister/////////////////////////////
+        
+        public static bool RegistLog(int userID,int LogTypeID)
+        {
+
+            return LogRegisterDb.SaveRegister(userID, LogTypeID);
+
+        }
+
+        public  static DataTable getLogList()
+        {
+            return LogRegisterDb.ListLogRegister();
+        }
+
+
+
+
+        public static bool IsLoggedIn()
+        {
+            int userid = -1;
+
+            return LogRegisterDb.IsLogedIn(ref userid);
+        }
+
+
+
+
+        public static UserBussinees FillUserLogedIN()
+        {
+            int userid = -1;
+            if(LogRegisterDb.IsLogedIn(ref userid))
+            {
+                return FindUserByID(userid);
+            }
+            else
+            {
+                return null;
+            }
+
+        }
     }
 }

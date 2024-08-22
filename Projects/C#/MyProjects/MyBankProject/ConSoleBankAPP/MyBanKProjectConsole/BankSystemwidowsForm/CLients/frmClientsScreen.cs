@@ -711,7 +711,11 @@ namespace BankSystemwidowsForm
 
         private void deleteToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            if(MessageBox.Show("are you sure","confirm",MessageBoxButtons.OKCancel)==DialogResult.OK)
+            {
+
             DeleteClient((int)dgvListClients.CurrentRow.Cells[0].Value);
+            }
             RefreshListClients();
 
         }

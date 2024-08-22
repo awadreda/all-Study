@@ -20,9 +20,10 @@ namespace BankDataAccessLayer
             bool isFound = false;
 
             SqlConnection connection = new SqlConnection(DataConnectionSettings.ConnectionString);
-            string query = "SELECT dbo.Users.UserID, dbo.Persons.*, dbo.Users.UserName, dbo.Users.PassWord, dbo.Users.Permission FROM dbo.Users INNER JOIN dbo.Persons ON dbo.Users.Person_ID = dbo.Persons.PersonID";
+            // string query = "SELECT dbo.Users.UserID, dbo.Persons.*, dbo.Users.UserName, dbo.Users.PassWord, dbo.Users.Permission FROM dbo.Users INNER JOIN dbo.Persons ON dbo.Users.Person_ID = dbo.Persons.PersonID";
+            string query = "select * from UserListView where UserID=@UserID";
 
-           
+
 
 
             SqlCommand command = new SqlCommand(query, connection);
@@ -68,9 +69,13 @@ namespace BankDataAccessLayer
             bool isFound = false;
 
             SqlConnection connection = new SqlConnection(DataConnectionSettings.ConnectionString);
-            string query =@"select *from (  SELECT dbo.Users.UserID, dbo.Persons.*, dbo.Users.UserName, dbo.Users.PassWord, dbo.Users.Permission FROM dbo.Users INNER JOIN dbo.Persons " +
-                "ON dbo.Users.Person_ID = dbo.Persons.PersonID) as t1 " +
-                "where UserID=@UserID";
+          //  string query =@"select *from (  SELECT dbo.Users.UserID, dbo.Persons.*, dbo.Users.UserName, dbo.Users.PassWord, dbo.Users.Permission FROM dbo.Users INNER JOIN dbo.Persons " +
+            //    "ON dbo.Users.Person_ID = dbo.Persons.PersonID) as t1 " +
+              //  "where UserID=@UserID";
+
+
+            string query = "select * from UserListVeiw where UserID=@UserID";
+
 
             SqlCommand command = new SqlCommand(query, connection);
             command.Parameters.AddWithValue("@UserID", UserID);
@@ -126,7 +131,7 @@ namespace BankDataAccessLayer
             //    "ON dbo.Users.Person_ID = dbo.Persons.PersonID) as t1 " +
             //    "where UserID=@UserID";
 
-            string query = @" select *from UserListView  where UserName= @UserName and PassWord = @PassWord ";
+            string query = @" select *from UserListVeiw  where UserName= @UserName and PassWord = @PassWord ";
 
             SqlCommand command = new SqlCommand(query, connection);
             command.Parameters.AddWithValue("@UserName", UserName);
@@ -184,9 +189,11 @@ namespace BankDataAccessLayer
             DataTable dt = new DataTable();
             SqlConnection connection = new SqlConnection(DataConnectionSettings.ConnectionString);
 
-            string query = "SELECT        dbo.Users.UserID, dbo.Users.UserName, dbo.Users.PassWord, dbo.Users.Permission, dbo.Persons.*"
-                           + "   FROM       dbo.Persons INNER JOIN" +
-                      "   dbo.Users ON dbo.Persons.PersonID = dbo.Users.Person_ID";
+            //string query = "SELECT        dbo.Users.UserID, dbo.Users.UserName, dbo.Users.PassWord, dbo.Users.Permission, dbo.Persons.*"
+            //               + "   FROM       dbo.Persons INNER JOIN" +
+            //          "   dbo.Users ON dbo.Persons.PersonID = dbo.Users.Person_ID";
+
+            string query = "select *From UserListVeiw;";
 
             SqlCommand command = new SqlCommand(query, connection);
 
@@ -246,6 +253,9 @@ namespace BankDataAccessLayer
                 string queryforPerson = @"INSERT INTO [dbo].[Persons] ([FirstName], [LastName], [Email], [Phone]) " +
                     "VALUES (@FirstName, @LastName, @Email, @Phone);" +
                     "   select SCOPE_IDENTITY(); ";
+
+
+
                 SqlCommand commandforPerson = new SqlCommand(queryforPerson, connection);
                 commandforPerson.Parameters.AddWithValue("@FirstName", FirstName);
                 commandforPerson.Parameters.AddWithValue("@LastName", LastName);
@@ -259,9 +269,11 @@ namespace BankDataAccessLayer
                     PersonID = indexID_ForPerson;
                 }
 
+                string i = "INSERT INTO [dbo].[Users] ([PersonID], [UserName], [PassWord], [Permission]) " +
+                    "VALUES (@FirstName, @LastName, @Email, @Phone)";
 
 
-                string QueryForUser = @"INSERT INTO [dbo].[Users] ([Person_ID], [UserName], [PassWord], [Permission]) 
+                string QueryForUser = @"INSERT INTO [dbo].[Users] ([PersonID], [UserName], [PassWord], [Permission]) 
                                     VALUES (@PersonID,@UserName,@PassWord,@Permissions);select SCOPE_IDENTITY();";
 
 
@@ -306,7 +318,7 @@ namespace BankDataAccessLayer
             int rowsAffected = 0;
             SqlConnection connection = new SqlConnection(DataConnectionSettings.ConnectionString);
             string query = "UPDATE [dbo].[Persons] SET [FirstName] = @FirstName, [LastName] = @LastName, [Email] = @Email, [Phone] = @Phone WHERE PersonID = @Person_ID  ;" +
-                "UPDATE [dbo].[Users] SET [Person_ID] = @Person_ID, [UserName] = @UserName, [PassWord] = @PassWord, [Permission] = @Permission WHERE UserID = @UserID";
+                "UPDATE [dbo].[Users] SET [PersonID] = @Person_ID, [UserName] = @UserName, [PassWord] = @PassWord, [Permission] = @Permission WHERE UserID = @UserID";
 
             SqlCommand command = new SqlCommand(query, connection);
             command.Parameters.AddWithValue("@FirstName", FirstName);
@@ -349,7 +361,7 @@ namespace BankDataAccessLayer
             bool isfound = false;
             SqlConnection connection = new SqlConnection(DataConnectionSettings.ConnectionString);
 
-            string query = "select A=0 from UserListView where UserID=@UserID";
+            string query = "select A=0 from UserListVeiw where UserID=@UserID";
 
 
 
@@ -389,7 +401,8 @@ namespace BankDataAccessLayer
 
             SqlConnection connection = new SqlConnection(DataConnectionSettings.ConnectionString);
 
-            string quary = "DELETE FROM Users WHERE Users.UserID=@ID; delete from Persons where PersonID not in (select Clients.PersonID from Clients) and PersonID not in (select Users.Person_ID from Users);";
+            string quary = "DELETE FROM Users WHERE Users.UserID=@ID;" +
+                " delete from Persons where PersonID not in (select Clients.PersonID from Clients) and PersonID not in (select Users.PersonID from Users);";
 
 
             SqlCommand command = new SqlCommand(quary, connection);

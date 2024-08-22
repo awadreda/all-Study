@@ -52,6 +52,7 @@ namespace BankSystemwidowsForm.Users
         void LoadUserSList()
         {
             dgvListUser.DataSource = UserBussinees.GetAllUsers();
+            dgvRefisterLogins.DataSource = UserBussinees.getLogList();
         }
 
         private void contextMenuStrip1_Opening(object sender, CancelEventArgs e)
@@ -90,8 +91,27 @@ namespace BankSystemwidowsForm.Users
             }
         }
 
+
+
         private void dgvListUser_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
+
+        }
+
+        private void dataGridView1_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void tabControl1_Selected(object sender, TabControlEventArgs e)
+        {
+            LoadUserSList();
+
+        }
+
+        private void tabControl1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            LoadUserSList();
 
         }
     }
